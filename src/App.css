@@ -93,8 +93,8 @@ body{
 .appbar{
   width: 100%;
 }
-.appbar{
-  width: 100%;
+.notfound{
+  width: 80vw;
 }
 @media(max-width :350px){
   .home{
