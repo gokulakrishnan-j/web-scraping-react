@@ -93,7 +93,9 @@ body{
 .appbar{
   width: 100%;
 }
-
+.appbar{
+  width: 100%;
+}
 @media(max-width :350px){
   .home{
     width: 50vw;
