@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin-top: 0%;
 }
 
 .App-logo {
@@ -36,69 +37,10 @@
     transform: rotate(360deg);
   }
 }
-#full{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 16px;
-  gap:18px;
-
-}
  
-.image{
-
-  object-position: top;
-  object-fit: cover;
-}
-
 body{
-  background:#e1e78d;
+  margin: 0%;
+  background:#03cfd6c0;
 }
 
-.home{
-  margin-top: 24px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  transition: 0.4s;
-  width: 350px;
-  text-align: center;
-}
 
-.home:hover{
-  width: 509px;
-  transform: rotate(360deg);
-}
-
-.search{
-  position : sticky;
-   top:10px
-}
-.searchInput{
-  margin-left: 24px;
-  width:200px;
-   height:24px;
-  border-color:whitesmoke ;
-  border-right-color: none;
-  border-right: 0px;
-   border-top-left-radius:18px;
-   border-bottom-left-radius:18px
-}
-.searchButton{
-  margin-left:16px;
-  border-radius:7px ;
-   padding:6px;
-   border-color:whitesmoke
-}
-.appbar{
-  width: 100%;
-}
-
-@media(max-width :350px){
-  .home{
-    width: 50vw;
-  }
-  .searchInput{
-    width: 100px;;
-  }
-}

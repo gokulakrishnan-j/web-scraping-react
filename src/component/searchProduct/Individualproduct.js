@@ -8,11 +8,12 @@ import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import { useNavigate } from 'react-router-dom';
+import './Individualproduct.css'
 
 
 function Individualproduct(props) {
     const navigate =useNavigate()
-console.log(props.data)
+
     var rate = "";
   return (
     <div>
@@ -31,7 +32,8 @@ console.log(props.data)
     
      background: "rgb(204, 230, 216)",
      height:"60%",
-     borderRadius:"8px"}}>
+     borderRadius:"8px"}}
+     className="productBox">
       <CardMedia
       className='image'
         component="img"
@@ -44,9 +46,9 @@ console.log(props.data)
 
       <CardContent>
      
-        <Typography variant="h7" sx={{fontWeight:"bold", height:"10px" , overflow:"hide"}} color="text.secondary">
+        <p className='title'>
           {n.title}
-        </Typography> <br/><br/>
+        </p> <br/><br/>
         <h1 style={{display:"none"}}>{ rate = n.rating.split(' ') }</h1>
         <Typography variant="h7" color="text.secondary">
           Rating:{n.rating}

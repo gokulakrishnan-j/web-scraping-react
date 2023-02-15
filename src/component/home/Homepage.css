@@ -1,0 +1,76 @@
+.home{
+  background: url('https://www.edesk.com/wp-content/uploads/2021/03/find-trending-products-sell-ecommerce.png');
+  background-repeat: no-repeat;
+background-size: cover;
+  width: 100vw;
+  height: 300px;
+  background-position: center;
+  margin-top: 0%;
+  }
+  
+  .hometext{
+    margin: 0%;
+  }
+.homeBox{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.homeProuductShowcase{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin: 20px;
+  
+}
+
+.showcaseImg{
+  width: 150px;
+  transition: 0.5s;
+}
+.showcaseImg:hover{
+  transform: scale(1.2);
+  }
+.homeProuctName{
+  background-color: rgba(0, 0, 0, 0.623);
+  color: aliceblue;
+  padding: 12px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+.homeProuctName:hover{
+  background-color: aliceblue;
+  color: black;
+}
+.homeLogBox{
+  background-color: rgba(255, 255, 255, 0.603);
+  padding: 12px;
+  color: rgb(17, 17, 17);
+  width: 30vw;
+ border-radius: 3px;
+ box-shadow: rgba(0, 0, 0, 0.315) 1px 1px 2px 2px;
+}
+.homeLogBox:hover{
+  font-size: large;
+  background-color: rgba(165, 42, 42, 0.664);
+  color: rgb(255, 255, 255);
+  letter-spacing: 4px;
+  box-shadow: rgba(255, 255, 255, 0.37) 1px 1px 2px 2px;
+}
+@media(max-width:380px){
+  .homeBox{
+flex-wrap: wrap;
+
+  }
+  .homeLogBox{
+    width: auto;
+  }
+
+  .showcaseImg{
+    width: 30vw;
+  }
+}

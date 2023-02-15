@@ -1,0 +1,45 @@
+.image{
+    object-position: center;
+    object-fit: cover;
+  }
+
+  #full{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 16px;
+    gap:8px;
+  
+  }
+  .productBox{
+    width: 20vw;
+  }
+
+  .title{
+    height: 110px;
+    overflow: hidden;
+    
+  }
+
+  @media(max-width:900px){
+    .productBox{
+      width: 30vw;
+    }
+  }
+
+  @media(max-width:670px){
+    .productBox{
+      width: 40vw;
+    }
+  }
+
+  @media(max-width:400px){
+  #full{
+   display: block;
+  }
+  .productBox{
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 8px;
+  }
+  }

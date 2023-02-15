@@ -1,0 +1,46 @@
+.loginBox{
+
+    background-color: rgba(0, 0, 0, 0.404);
+    width: 40vw;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.inputForLogin{
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.inputForLogin:hover{
+    border-color: aqua;
+}
+
+.loginButton{
+    background-color: aliceblue;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+}
+
+.loginButton:hover{
+    background-color: brown;
+    color: white;
+}
+
+.register{
+    font-weight: bold;
+}
+
+.register:hover{
+    color: rgb(37, 231, 19);
+}
+
+@media(max-width:450px){
+
+    .loginBox{
+        width: 80vw;
+    }
+}

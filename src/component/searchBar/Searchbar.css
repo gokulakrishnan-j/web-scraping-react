@@ -1,0 +1,36 @@
+.search{
+    position : sticky;
+     top:1px;
+     margin: 0px;
+  }
+  .searchInput{
+    margin-left: 24px;
+    width:200px;
+     height:24px;
+    border-color:whitesmoke ;
+    border-right-color: none;
+    border-right: 0px;
+     border-top-left-radius:18px;
+     border-bottom-left-radius:18px
+  }
+  .searchButton{
+    margin-left:16px;
+    border-radius:7px ;
+     padding:6px;
+     border-color:whitesmoke
+  }
+  .appbar{
+    width: 100%;
+  }
+.logout{
+  margin-left: auto;
+  cursor: pointer;
+  background-color: rgba(211, 209, 209, 0.192);
+  padding: 4px;
+  border-radius: 8px;
+}
+  @media(max-width :350px){
+    .searchInput{
+      width: 100px;;
+    }
+  }

@@ -7,18 +7,25 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
-import {API} from "../global/global"
+import {API} from "../../global/global"
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import { useNavigate } from 'react-router-dom';
+import './Product.css'
+
 
 function Product() {
   const navigate = useNavigate()
     const [product,setproduct]=useState([])
+ 
   useEffect(()=>{
-    fetch(`${API}/product`)
+    fetch(`${API}/product`,{
+      headers:{'my_token':localStorage.getItem("token")}
+    })
     .then((data)=>data.json())
     .then((value)=>setproduct(value))
   },[])
+
+  
   var rate = "";
   return (
     <div>
@@ -37,10 +44,10 @@ product.map((n,i)=>(
   n.image == null  ? "" :
   
   <Card sx={{ maxWidth: 345 ,
-    
      background: "rgb(204, 230, 216)",
      height:"60%",
-     borderRadius:"8px"}}>
+     borderRadius:"8px"}}
+     className="productBox">
       <CardMedia
       className='image'
         component="img"
@@ -53,9 +60,9 @@ product.map((n,i)=>(
 
       <CardContent>
      
-        <Typography variant="h7" className='title' sx={{fontWeight:"bold", height:"10px" , overflow:"auto"}} color="text.secondary">
+        <p  className='title' >
           {n.title}
-        </Typography> <br/><br/>
+        </p> <br/><br/>
         <h1 style={{display:"none"}}>{ rate = n.rating.split(' ') }</h1>
         <Typography variant="h7" color="text.secondary">
           Rating:{n.rating}

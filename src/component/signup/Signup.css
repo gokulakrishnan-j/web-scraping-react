@@ -1,0 +1,45 @@
+.signupBox{
+    background-color: rgba(0, 0, 0, 0.404);
+    width: 40vw;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.inputForSignup{
+
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 8px;
+
+}
+
+.inputForSignup:hover{
+    border-color: aqua;
+}
+
+.signupButton{
+    background-color: aliceblue;
+    border-radius: 8px;
+    border: none;
+    padding: 4px;
+}
+.signupButton:hover{
+    background-color: brown;
+    color: white;
+}
+
+.navigateToLoginPage{
+    font-weight: bold;
+}
+.navigateToLoginPage:hover{
+    color: rgb(37, 231, 19);
+}
+
+@media(max-width:450px){
+
+    .signupBox{
+        width: 80vw;
+    }
+}
