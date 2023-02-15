@@ -21,7 +21,6 @@ function App() {
     <Route path="/product/:email"  element={<Product/>}/>
     <Route path="/individualproduct/:email"  element={ <Individualproduct data={singleproduct}/>}/>
     <Route path="/:email"  element={<Homepage data={setsingalproduct} mail={setEmail}/> }/>
-    <Route path="*"  element={ <Notfound/>}/>
     <Route path="/signup"  element={ <Signup/>}/>
     <Route path="/login"  element={ <Login/>}/>
     <Route path="*"  element={<Navigate to="/login"/>}/>
