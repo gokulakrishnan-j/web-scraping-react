@@ -44,3 +44,46 @@ body{
 }
 
 
+<<<<<<< HEAD
+=======
+.home:hover{
+  width: 509px;
+  transform: rotate(360deg);
+}
+
+.search{
+  position : sticky;
+   top:10px
+}
+.searchInput{
+  margin-left: 24px;
+  width:200px;
+   height:24px;
+  border-color:whitesmoke ;
+  border-right-color: none;
+  border-right: 0px;
+   border-top-left-radius:18px;
+   border-bottom-left-radius:18px
+}
+.searchButton{
+  margin-left:16px;
+  border-radius:7px ;
+   padding:6px;
+   border-color:whitesmoke
+}
+.appbar{
+  width: 100%;
+}
+.notfound{
+  width: 80vw;
+  height: 80vh;
+}
+@media(max-width :350px){
+  .home{
+    width: 50vw;
+  }
+  .searchInput{
+    width: 100px;;
+  }
+}
+>>>>>>> 5557a9797a1351ad89cb0ac9e413bad1009a725c
