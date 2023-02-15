@@ -5,7 +5,6 @@ import Product from './component/product/Product';
 import Searchbar from './component/searchBar/Searchbar';
 import {BrowserRouter,Routes,Route, Navigate} from "react-router-dom"
 import Homepage from './component/home/Homepage';
-import Notfound from './component//notFound/Notfound';
 import Signup from './component/signup/Signup';
 import Login from './component/login/Login'
 
