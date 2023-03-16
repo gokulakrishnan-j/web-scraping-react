@@ -43,13 +43,6 @@ body{
   background:#03cfd6c0;
 }
 
-
-
-.home:hover{
-  width: 509px;
-  transform: rotate(360deg);
-}
-
 .search{
   position : sticky;
    top:10px
