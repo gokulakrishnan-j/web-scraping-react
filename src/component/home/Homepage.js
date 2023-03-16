@@ -42,6 +42,7 @@ function ProductHome ({tokenData,data,mail}){
         headers:{'my_token':localStorage.getItem("token")}
       })
   .then((data)=>data.json())
+  .then((val)=>console.log(val))
   .then((values)=>data(values))
   .then(()=>(navigate(`/individualproduct/${email}`)))
   
