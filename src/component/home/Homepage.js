@@ -39,6 +39,7 @@ function ProductHome ({tokenData,data,mail}){
       })
   .then((data)=>data.json())
  .then((values)=>{data(values)
+                  console.log(values)
     navigate(`/individualproduct/${email}`)})
   
       
