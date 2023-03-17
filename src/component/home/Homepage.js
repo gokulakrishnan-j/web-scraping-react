@@ -31,11 +31,7 @@ function ProductHome ({tokenData,data,mail}){
 
     mail(email)
   },[email ,mail])
-  useEffect(()=>{
-    fetch(`${API}`,{
-      headers:{'my_token':localStorage.getItem("token")},
-    })
-  },[])
+
   const handleShowcaseSearch =(values)=>{
    
       fetch(`${API}/product/${values}`,{
